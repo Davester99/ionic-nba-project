@@ -217,5 +217,8 @@ export class TeamService {
       "Southwest"
     ),
   ];
+  get teams(){
+    return [...this._teams];
+  }
   constructor() { }
 }

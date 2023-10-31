@@ -1,17 +1,28 @@
-<ion-header [translucent]="true">
+<ion-header>
   <ion-toolbar>
     <ion-title>
-      Tab 2
+      NBA Teams
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 2</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <app-explore-container name="Tab 2 page"></app-explore-container>
+<ion-content class="ion-padding">
+  <ion-grid>
+    <ion-row>
+      <ion-col size-md="8" offset-md="2">
+        <ion-list>
+          <ion-item *ngFor="let team of loadedTeams; index as i">
+            <ion-thumbnail slot="start" class="pictures">
+              <img src="{{team.image}}">
+            </ion-thumbnail>
+            <ion-label class="centered-label">
+              <h2>{{i+1}}. {{team.name}}</h2>
+              <p>Location: {{team.location}} | Division: {{team.division}}</p>
+            </ion-label>
+          </ion-item>
+        </ion-list>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>
+

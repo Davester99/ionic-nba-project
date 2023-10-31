@@ -1,0 +1,21 @@
+ion-item {
+  display: flex;
+  align-items: center;
+}
+
+.pictures {
+  height: 100px; /* Adjust the height as needed */
+  display: flex;
+  align-items: center;
+}
+
+.pictures img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+
+
+  
