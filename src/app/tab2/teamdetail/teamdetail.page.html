@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/tabs/tab2"></ion-back-button>
+    </ion-buttons>
+    <ion-title>{{team.name}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-col size-md="8" offset-md="2" class="ion-text-center">
+      <ion-card>
+        <img class="image" src={{team.image}}>
+        <ion-card-content>
+          <p>{{team.location}}</p>
+          <p>{{team.description}}</p>
+        </ion-card-content>
+      </ion-card>
+    </ion-col>
+  </ion-grid>
+</ion-content>

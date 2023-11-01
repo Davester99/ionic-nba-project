@@ -4,6 +4,7 @@ export class Team {
         public name: string,
         public location: string,
         public image: string,
-        public division: string
+        public division: string,
+        public description: string
     ) {}
 }
